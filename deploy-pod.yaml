@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: deploy-name
   labels:
     app: springboot
 spec:
@@ -17,4 +17,4 @@ spec:
       - image: itdriveview/java-display-console:latest
         name: my-container
         ports:
-        - containerPort: 8085
+        - containerPort: 8099
