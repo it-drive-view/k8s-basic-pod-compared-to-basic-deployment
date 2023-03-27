@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-display-console-prod
+  name: basic-pod
   labels:
-    app: lab-pod-prod        
+    app: basic        
 spec:
   containers:      
-  - name: display-console-prod
+  - name: basic-conainer
     image: itdriveview/java-display-console:latest
