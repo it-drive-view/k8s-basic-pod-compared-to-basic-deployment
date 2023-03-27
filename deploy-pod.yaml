@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy-name
-  labels:
-    app: springboot
 spec:
   selector:
     matchLabels:
@@ -16,5 +14,13 @@ spec:
       containers:
       - image: itdriveview/java-display-console:latest
         name: my-container
-        ports:
-        - containerPort: 8085
+        ports:                  # ne sert à rien. à titre informatif seulement
+        - containerPort: 8085   # ne sert à rien. à titre informatif seulement
+
+
+
+
+
+
+
+
