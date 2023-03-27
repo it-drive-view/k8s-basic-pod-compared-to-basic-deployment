@@ -17,4 +17,4 @@ spec:
       - image: itdriveview/java-display-console:latest
         name: my-container
         ports:
-        - containerPort: 8099
+        - containerPort: 8085
