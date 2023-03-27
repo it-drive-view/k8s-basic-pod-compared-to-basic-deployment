@@ -1,0 +1,1 @@
+# k8s-basic-pod-compared-to-basic-deployment
