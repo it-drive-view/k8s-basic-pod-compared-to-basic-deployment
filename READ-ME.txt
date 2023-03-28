@@ -1,0 +1,30 @@
+
+1- je crée toutes mes ressources:
+
+kubectl apply -f .
+
+2- je récupère l'adresse IP de l'un des noeuds du cluster 
+
+kubectl get nodes -o wide 
+==> 192.168.49.2
+
+3- je récupère les NodePort de mes deux services 
+
+kubectl get svc 
+==> 31001 et 31002 
+
+4- je n'ai plus qu'à faire : 
+
+curl -X GET http://192.168.49.2:31001/display/console
+curl -X GET http://192.168.49.2:31002/display/console
+
+	l'appli va répondre: 
+	"platform: BAD-PLATFORM-EXPECTED-OVERLOAD-APPLICATION-PROPERTIES
+	 application is running.."
+	==> c'est tout à fait normal, on n'a pas mis en place de fichier de surcharge application.properties
+
+sinon, dans un browser:
+
+http://192.168.49.2:31001/display/console
+http://192.168.49.2:31002/display/console
+
