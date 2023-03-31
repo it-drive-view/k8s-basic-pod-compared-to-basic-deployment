@@ -1,4 +1,8 @@
 
+-------------------------------------
+faire tourner la stack k8s
+-------------------------------------
+
 1- je crée toutes mes ressources:
 
 kubectl apply -f .
@@ -27,4 +31,12 @@ sinon, dans un browser:
 
 http://192.168.49.2:31001/display/console
 http://192.168.49.2:31002/display/console
+
+--------------------------------
+comprendre les mécanismes 
+--------------------------------
+
+voir ce lien:
+https://docs.google.com/document/d/18N2n_cTMbw5nLXyxR0P_KlQKW0LDPzUOfvVcPLCxYZg/edit#heading=h.upni5d5rim4y
+
 
